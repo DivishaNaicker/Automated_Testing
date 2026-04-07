@@ -9,5 +9,18 @@ package com.mycompany.automated_testing;
  * @author lab_services_student
  */
 public class Employee {
+     //Data Fields
+    private double salary;
     
+    //Create a Constructor
+    public Employee(double salary){
+        this.salary = salary;
+    }
+    
+    //Create a calculate Salary Method
+  public double CalculatedSalary(double bonus, double taxRate){
+      double grossSalary = salary + bonus;
+      double tax = grossSalaray * taxRate;
+      return grossSalary- tax;
+  }    
 }
